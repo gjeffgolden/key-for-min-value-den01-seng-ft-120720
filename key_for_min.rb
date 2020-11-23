@@ -8,7 +8,7 @@ def key_for_min_value(name_hash)
   minimum_value2 = 
   maximum_pair = name_hash.max 
   name_hash.each do |key, value|
-    maximum_value = maximum_pair[:key]
+    maximum_value = maximum_pair[value]
     if value < maximum_value 
       minimum_value1 = value
     end
