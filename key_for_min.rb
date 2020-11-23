@@ -15,6 +15,7 @@ def key_for_min_value(name_hash)
       value = min
       value = max
     end
+    binding.pry 
   end
   name_hash  
 end
