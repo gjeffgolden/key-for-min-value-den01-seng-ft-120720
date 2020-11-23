@@ -4,8 +4,8 @@
 require 'pry'
 
 def key_for_min_value(name_hash)
-  max = 
-  name_hash.collect do |key, value|
+  new_array = name_hash.collect do |key, value|
     value
   end
+  new_array.max
 end
