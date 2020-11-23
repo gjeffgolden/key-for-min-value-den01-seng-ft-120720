@@ -6,15 +6,9 @@ require 'pry'
 def key_for_min_value(name_hash)
   max = 1000
   min = 
-  solution =
   name_hash.each do |key, value|
     if value < max
-      value = min
+    min = value
     end
-    if value < min
-      value = solution
-    else
-      min = solution
-  end
   end
 end
