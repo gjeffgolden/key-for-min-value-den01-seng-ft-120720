@@ -4,11 +4,12 @@
 require 'pry'
 
 def key_for_min_value(name_hash)
-  max = 1000
-  min = 
+  max_pair = name_hash.max
+  max_value =  
   name_hash.each do |key, value|
     if value < max
     min = value
     end
+    if value 
   end
 end
