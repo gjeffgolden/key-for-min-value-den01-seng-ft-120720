@@ -11,9 +11,10 @@ def key_for_min_value(name_hash)
     if value < max
       value = min
     end
-    if value > min
+    if value < min
+      value = solution
+    else
       min = solution
-    else value = solution
   end
   end
 end
