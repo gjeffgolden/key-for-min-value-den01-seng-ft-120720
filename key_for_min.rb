@@ -9,7 +9,7 @@ def key_for_min_value(name_hash)
     if value < min_value
       value = min_value 
     end
-    puts min_value[key]
+    puts min_value
   end
   name_hash  
 end
