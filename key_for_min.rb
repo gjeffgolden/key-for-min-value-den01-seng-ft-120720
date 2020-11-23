@@ -4,7 +4,8 @@
 require 'pry'
 
 def key_for_min_value(name_hash)
-  min = 
+  min1 =
+  min2 = 
   max = 
   new_array = name_hash.collect do |key, value|
     value
@@ -12,10 +13,8 @@ def key_for_min_value(name_hash)
   max = new_array.max
   name_hash.each do |key, value|
     if value < max
-      value = min
-      value = max
+      value = min1
     end
-    binding.pry 
   end
   name_hash  
 end
