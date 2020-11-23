@@ -4,21 +4,16 @@
 require 'pry'
 
 def key_for_min_value(name_hash)
-  min1 = 
-  min2 =
-  max = 
+  max = name_hash.max
+  max_array = max.to_a
+  max_value = max_array[0][1]
   name_hash.each do |key, value|
-    if value == name_hash[value].max
-      value = max 
-    end
-    binding.pry 
-    if value < max
+    if value < max_value
       value = min1
     end
     if value < min1
-      value = min2 
+      value = min2
     end
-    binding.pry 
   end
   name_hash 
 end
