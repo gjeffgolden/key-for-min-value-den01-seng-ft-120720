@@ -7,6 +7,8 @@ def key_for_min_value(name_hash)
   max = name_hash.max
   max_array = max.to_a
   max_value = max_array[1]
+  min1 = 
+  min2 = 
   name_hash.each do |key, value|
     if value < max_value
       value = min1
