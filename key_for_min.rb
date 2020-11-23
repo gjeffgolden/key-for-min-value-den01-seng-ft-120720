@@ -4,16 +4,16 @@
 require 'pry'
 
 def key_for_min_value(name_hash)
-  minimum_value = 
+  minimum_value1 =
+  minimum_value2 = 
   maximum_pair = name_hash.max 
-  maximum_value = maximum_pair[:key]
   name_hash.each do |key, value|
-    
-    if value.is_max?
-      minimum_value = value
+    maximum_value = maximum_pair[:key]
+    if value < maximum_value 
+      minimum_value1 = value
     end
-    if value < minimum_value
-    puts name_hash[:key]
+    if value < minimum_value1
+      minimum_value2 = value 
   end
   name_hash 
 end
