@@ -4,13 +4,16 @@
 require 'pry'
 
 def key_for_min_value(name_hash)
+  min = 
+  max = 
   new_array = name_hash.collect do |key, value|
     value
   end
   max = new_array.max
   name_hash.each do |key, value|
-    if value == max
-      puts "The maximum is #{value}."
+    if value < max
+      value = min
+      value = max
     end
   end
 end
