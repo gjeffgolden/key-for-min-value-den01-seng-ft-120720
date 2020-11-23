@@ -11,6 +11,7 @@ def key_for_min_value(name_hash)
     if value == name_hash.max
       value = max 
     end
+    binding.pry 
     if value < max
       value = min1
     end
