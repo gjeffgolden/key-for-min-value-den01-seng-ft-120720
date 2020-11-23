@@ -8,7 +8,7 @@ def key_for_min_value(name_hash)
   min2 =
   max = 
   name_hash.each do |key, value|
-    if value == name_hash.max
+    if value == name_hash[value].max
       value = max 
     end
     binding.pry 
